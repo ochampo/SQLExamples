@@ -1,3 +1,4 @@
+use AdventureWorks2017;
 select BusinessEntityID,FirstName, LastName
 from Person.Person;
 
