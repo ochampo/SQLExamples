@@ -1,0 +1,7 @@
+https://learn.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container?view=sql-server-ver16
+In windows, the powershell commands to import a bak
+docker exec -it sql1 mkdir /var/opt/mssql/backup
+curl -OutFile "wwi.bak" "https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak"
+docker cp wwi.bak sql1:/var/opt/mssql/backup
+
+*note sql1 is the name of the DB
